@@ -1,6 +1,7 @@
 package com.taufiqhidayah.pemilu;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
         txtTimerMinute = (TextView) findViewById(R.id.txtTimerMinute);
         txtTimerSecond = (TextView) findViewById(R.id.txtTimerSecond);
         tvEvent = (TextView) findViewById(R.id.tvhappyevent);
-
+        findViewById(R.id.imgBerita).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ListBeritaActivity.class));
+            }
+        });
         countDownStart();
     }
 

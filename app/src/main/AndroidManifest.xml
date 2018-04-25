@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProfilActiviry"></activity>
+        <activity android:name=".ProfilActiviry" />
+        <activity android:name=".ListBeritaActivity" />
+        <activity android:name=".DetailBeritaActivity"></activity>
     </application>
 
 </manifest>
